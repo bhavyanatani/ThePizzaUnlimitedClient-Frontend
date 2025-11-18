@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍕 Pizza Unlimited – Client Frontend
+**Live Site:** https://the-pizza-unlimited-client-frontend-three.vercel.app/ 
+**Backend Repo:** https://github.com/bhavyanatani/ThePizzaUnlimited-Backend  
+**Admin Repo:** https://github.com/bhavyanatani/ThePizzaUnlimitedAdmin-Frontend
 
-## Getting Started
+## 🧩 Overview
+Pizza Unlimited is a full-stack restaurant ordering platform built with **Next.js**, featuring menu browsing, cart management, order placement, and table reservations. It includes real-time order status updates, secure authentication, and a fully responsive modern UI.
 
-First, run the development server:
+## 🚀 Features
+- 🍽️ Menu browsing with item details  
+- 🛒 Add to cart, update quantities, checkout  
+- 📅 Table reservation system  
+- 🔄 Reorder & cancel orders  
+- 📊 Real-time order status updates (polling)  
+- 💰 GST & service fee calculation  
+- 🔐 Clerk authentication  
+- 🖼️ Cloudinary image optimization  
+- 📱 Fully responsive UI  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+- **Frontend:** Next.js, React.js, Tailwind CSS, shadcn/ui, Framer Motion  
+- **Authentication:** Clerk  
+- **Media:** Cloudinary  
+- **Backend:** Express.js + Node.js  
+- **Database:** MongoDB  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Setup Instructions
+1️⃣ Clone the repository  
+git clone https://github.com/bhavyanatani/ThePizzaUnlimitedClient-Frontend 
+cd <project_folder>  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2️⃣ Install dependencies  
+npm install  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3️⃣ Add environment variables  
+Create a `.env.local` file and add:  
+NEXT_PUBLIC_API_BASE_URL=<your_backend_url>  
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your_key>  
+CLERK_SECRET_KEY=<your_key>  
+CLOUDINARY_CLOUD_NAME=<your_cloud_name>  
 
-## Learn More
+4️⃣ Run the development server  
+npm run dev  
+The app will run at **http://localhost:3000**
 
-To learn more about Next.js, take a look at the following resources:
+## ⚠️ Note
+Backend and Admin dashboard may take a few seconds to respond if deployed on free-tier hosting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧑‍💻 Author
+**Bhavya Natani**
